@@ -1,0 +1,241 @@
+<!-- blog.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Behind the Veil | Spiritual Insights & Divine Wisdom</title>
+    
+    <!-- Preload key resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Enhanced Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Additional Libraries -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles/blog.css">
+</head>
+<body>
+    <!-- Immersive Blog Header -->
+    <header class="blog-header">
+        <div class="header-background">
+            <div class="particle-container" id="particles-js"></div>
+            <div class="gradient-overlay"></div>
+        </div>
+        <div class="header-content" data-aos="fade-up">
+            <h1 class="dynamic-text">Spiritual Insights</h1>
+            <p class="header-subtitle">Where Divine Wisdom Meets Modern Understanding</p>
+            <div class="search-container">
+                <div class="search-box">
+                    <input type="text" placeholder="Search for spiritual insights...">
+                    <button class="search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll to Explore</span>
+        </div>
+    </header>
+
+    <!-- Featured Story Slider -->
+    <section class="featured-stories">
+        <div class="section-header">
+            <h2 class="reveal-text">Featured Stories</h2>
+            <div class="slider-navigation">
+                <button class="nav-btn prev">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+                <button class="nav-btn next">
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+        
+        <div class="stories-slider swiper">
+            <div class="swiper-wrapper">
+                <!-- Featured Story 1 -->
+                <div class="swiper-slide">
+                    <article class="featured-card">
+                        <div class="card-media">
+                            <img src="/images/presence.jpg" alt="Divine Presence">
+                            <div class="media-overlay"></div>
+                            <div class="card-category">Featured</div>
+                        </div>
+                        <div class="card-content">
+                            <div class="content-meta">
+                                <span class="date">March 3, 2025</span>
+                                <span class="read-time">8 min read</span>
+                            </div>
+                            <h3>The Divine Presence in Everyday Moments</h3>
+                            <p>Discovering the subtle whispers of spiritual guidance in our daily lives...</p>
+                            <div class="author-info">
+                                <img src="path/to/author1.jpg" alt="Author">
+                                <div class="author-details">
+                                    <span class="name">Sarah Mitchell</span>
+                                    <span class="role">Spiritual Guide</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <!-- More featured stories... -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Dynamic Category Navigation -->
+    <nav class="category-nav">
+        <div class="category-container">
+            <button class="category-item active" data-category="all">
+                <span class="category-icon"><i class="fas fa-globe"></i></span>
+                <span class="category-name">All</span>
+            </button>
+            <button class="category-item" data-category="wisdom">
+                <span class="category-icon"><i class="fas fa-lightbulb"></i></span>
+                <span class="category-name">Divine Wisdom</span>
+            </button>
+            <button class="category-item" data-category="meditation">
+                <span class="category-icon"><i class="fas fa-pray"></i></span>
+                <span class="category-name">Meditation</span>
+            </button>
+            <button class="category-item" data-category="growth">
+                <span class="category-icon"><i class="fas fa-seedling"></i></span>
+                <span class="category-name">Spiritual Growth</span>
+            </button>
+            <button class="category-item" data-category="inspiration">
+                <span class="category-icon"><i class="fas fa-feather"></i></span>
+                <span class="category-name">Inspiration</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Blog Content -->
+    <main class="blog-main">
+        <div class="content-wrapper">
+            <!-- Latest Posts -->
+            <section class="latest-posts">
+                <div class="posts-header">
+                    <h2>Latest Insights</h2>
+                    <div class="view-toggle">
+                        <button class="toggle-btn active" data-view="grid">
+                            <i class="fas fa-th-large"></i>
+                        </button>
+                        <button class="toggle-btn" data-view="list">
+                            <i class="fas fa-list"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="posts-grid" id="postsContainer">
+                    <!-- Dynamic posts will be loaded here -->
+                </div>
+
+                <div class="load-more-container">
+                    <button class="load-more-btn">
+                        <span>Load More</span>
+                        <div class="loading-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </button>
+                </div>
+            </section>
+
+            <!-- Sidebar -->
+            <aside class="blog-sidebar">
+                <!-- Popular Posts -->
+                <div class="sidebar-widget popular-posts">
+                    <h3>Popular This Week</h3>
+                    <div class="widget-content">
+                        <!-- Popular post items -->
+                    </div>
+                </div>
+
+                <!-- Categories Cloud -->
+                <div class="sidebar-widget categories-cloud">
+                    <h3>Explore Topics</h3>
+                    <div class="widget-content">
+                        <!-- Category tags -->
+                    </div>
+                </div>
+
+                <!-- Newsletter Widget -->
+                <div class="sidebar-widget newsletter">
+                    <h3>Stay Inspired</h3>
+                    <div class="widget-content">
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Your email address">
+                            <button type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- Featured Video Section -->
+    <section class="video-section">
+        <div class="video-background">
+            <video autoplay muted loop>
+                <source src="/videos/Chester DT Baldwin - I Still Hear Mama Praying - 'Sing It On Sunday Morning' - JDI Records.mp4" type="video/mp4">
+            </video>
+            <div class="video-overlay"></div>
+        </div>
+        <div class="video-content">
+            <h2>Featured Video</h2>
+            <div class="video-player">
+                <!-- Video player content -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Quote Section -->
+    <section class="quote-section">
+        <div class="quote-container">
+            <blockquote class="featured-quote">
+                <p>"The spiritual journey is individual, highly personal. It can't be organized or regulated. It isn't true that everyone should follow one path. Listen to your own truth."</p>
+                <cite>- Ram Dass</cite>
+            </blockquote>
+        </div>
+    </section>
+
+    <!-- Enhanced Newsletter Section -->
+    <section class="enhanced-newsletter">
+        <div class="newsletter-background">
+            <div class="floating-elements"></div>
+        </div>
+        <div class="newsletter-content">
+            <h2>Join Our Spiritual Community</h2>
+            <p>Receive weekly insights, meditations, and spiritual guidance</p>
+            <form class="enhanced-form">
+                <div class="form-group">
+                    <input type="text" placeholder="Your name">
+                    <input type="email" placeholder="Your email">
+                </div>
+                <button type="submit">
+                    <span>Subscribe</span>
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </form>
+        </div>
+    </section>
+</body>
+
+<!-- Scripts -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="js/blog.js"></script>
+</html>
